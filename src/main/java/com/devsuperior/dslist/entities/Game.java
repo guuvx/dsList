@@ -31,8 +31,7 @@ public class Game {
 	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
-	public Game() {
-	}
+	public Game() {}
 
 	public Game(Long id, String title, Integer year, String genre, String platform, Double score, String imgUrl, String shortDescription, String longDescription) {
 		this.id = id;
@@ -134,7 +133,4 @@ public class Game {
 		Game other = (Game) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-
 }
