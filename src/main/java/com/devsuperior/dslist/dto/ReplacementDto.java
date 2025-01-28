@@ -16,7 +16,4 @@ public class ReplacementDto {
 	public void setDestinationIndex(Integer destinationIndex) {
 		this.destinationIndex = destinationIndex;
 	}
-	
-	
-
 }
