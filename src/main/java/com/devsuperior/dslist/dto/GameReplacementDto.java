@@ -1,6 +1,6 @@
 package com.devsuperior.dslist.dto;
 
-public class ReplacementDTO {
+public class GameReplacementDto {
 	
 	private Integer sourceIndex;
 	private Integer destinationIndex;
