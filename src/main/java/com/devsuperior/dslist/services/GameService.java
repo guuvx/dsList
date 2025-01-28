@@ -5,6 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.devsuperior.dslist.dto.GameMaxDTO;
 import com.devsuperior.dslist.dto.GameMinDTO;
@@ -17,6 +20,7 @@ public class GameService {
 	
 	@Autowired
 	private GameRepository gameRepository;
+	
 	
 	@Transactional(readOnly = true)
 	public GameMaxDTO findById(Long id) {
@@ -36,3 +40,4 @@ public class GameService {
 		return result.stream().map(x -> new GameMinDTO(x)).toList();
 	}
 }
+
